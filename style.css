@@ -54,9 +54,13 @@ body {
     border: none;
     cursor: pointer;
   }
+
+  .sub{
+    border-radius: 5px;
+  }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #357e39;
   }
 
   .history{
@@ -97,10 +101,15 @@ body {
     border-right: 5px solid red;
   }
   
-  .transaction-title {
-    flex: 1;
-    margin-right: 10px;
+  span{
+    width: fit-content;
   }
+  .transaction-title {
+    margin-right: 10px;
+   
+    
+  }
+
   
   .transaction-amount {
     font-weight: bold;

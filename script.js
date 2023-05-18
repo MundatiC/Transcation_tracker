@@ -39,7 +39,7 @@ transactionForm.addEventListener('submit', function(e) {
   };
 
   // Add new transaction to the array
-  transactions.push(newTransaction);
+  transactions.unshift(newTransaction);
 
   // Clear form inputs
   transactionForm.reset();
@@ -53,11 +53,16 @@ transactionForm.addEventListener('submit', function(e) {
 
 // Delete transaction event listener
 transactionList.addEventListener('click', function(e) {
-    if (e.target.classList.contains('transaction-container')) {
-      const transactionIndex = parseInt(e.target.getAttribute('data-index'));
+  if (e.target.classList.contains('transaction-container')) {
+    const transactionIndex = parseInt(e.target.getAttribute('data-index'));
+    if (transactionIndex === selectedTransactionIndex) {
+      setSelectedTransaction(null); // Deselect the transaction
+    } else {
       setSelectedTransaction(transactionIndex);
     }
-  });
+  }
+});
+
   
   // Set selected transaction index and update UI
   function setSelectedTransaction(index) {
@@ -118,8 +123,6 @@ transactionList.addEventListener('click', function(e) {
 // Clear selected transaction and update UI
 function clearSelectedTransaction() {
   selectedTransactionIndex = null;
-  editButton.disabled = true;
-  deleteButton.disabled = true;
   transactionList.querySelectorAll('.transaction-container').forEach(function(transactionContainer) {
     transactionContainer.classList.remove('selected');
   });
