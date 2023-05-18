@@ -4,7 +4,7 @@ A simple web page in HTML, CSS and Javascript. A basic implementation of DOM and
 
 
 # Interface
-![image](.assets/design.png);
+![image](./assets/design.png);
 
 
 <video width="640" height="480" controls>
