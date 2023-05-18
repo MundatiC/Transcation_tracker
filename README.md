@@ -4,8 +4,14 @@ A simple web page in HTML, CSS and Javascript. A basic implementation of DOM and
 
 
 # Interface
-![image](./assets/design.png)
+The website has a fully responsive interface
+
+## Desktop View
+![image](./assets/Desktop.png)
+
+## Mobile View
+![image](./assets/Mobile.png)
 
 
-![Alt Text](./assets/interface.gif)
+![Alt Text](./assets/interface2.gif)
 
