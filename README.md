@@ -12,6 +12,6 @@ The website has a fully responsive interface
 ## Mobile View
 ![image](./assets/Mobile.png)
 
-
+## How the interface works
 ![Alt Text](./assets/interface2.gif)
 
